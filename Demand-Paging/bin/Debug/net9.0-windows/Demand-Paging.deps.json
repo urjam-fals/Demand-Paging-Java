@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Demand-Paging/1.0.0": {
+        "dependencies": {
+          "Krypton.Toolkit": "95.25.4.111"
+        },
+        "runtime": {
+          "Demand-Paging.dll": {}
+        }
+      },
+      "Krypton.Toolkit/95.25.4.111": {
+        "runtime": {
+          "lib/net9.0-windows7.0/Krypton.Toolkit.dll": {
+            "assemblyVersion": "95.25.4.111",
+            "fileVersion": "95.25.4.111"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Demand-Paging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Krypton.Toolkit/95.25.4.111": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f+3IaPFmuJGVDwGks1UAWtUaVy2yuBG483kjew7FsZ7DeXxdC9NO+h438WvLifmrIC7w5AlHlOVf0MynVONyMQ==",
+      "path": "krypton.toolkit/95.25.4.111",
+      "hashPath": "krypton.toolkit.95.25.4.111.nupkg.sha512"
+    }
+  }
+}
