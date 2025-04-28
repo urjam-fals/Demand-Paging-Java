@@ -19,3 +19,4 @@ C:\PLATECH\Demand-Paging\obj\Debug\net9.0-windows\Demand-Paging.csproj.AssemblyR
 C:\PLATECH\Demand-Paging\obj\Debug\net9.0-windows\Demand-P.BC5D4E3E.Up2Date
 C:\PLATECH\Demand-Paging\obj\Debug\net9.0-windows\Demand_Paging.Cover.resources
 C:\PLATECH\Demand-Paging\obj\Debug\net9.0-windows\Demand_Paging.Properties.Resources.resources
+C:\PLATECH\Demand-Paging\obj\Debug\net9.0-windows\Demand_Paging.MainFrame.resources

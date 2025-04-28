@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            button1 = new Button();
+            minimizeBtn = new Button();
             closeBtn = new Button();
             coverPic = new PictureBox();
             continueBtn = new Krypton.Toolkit.KryptonButton();
@@ -43,7 +43,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(15, 10, 45);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(minimizeBtn);
             panel1.Controls.Add(closeBtn);
             panel1.Controls.Add(coverPic);
             panel1.Controls.Add(continueBtn);
@@ -56,21 +56,22 @@
             panel1.Size = new Size(1159, 646);
             panel1.TabIndex = 5;
             // 
-            // button1
+            // minimizeBtn
             // 
-            button1.BackColor = Color.Transparent;
-            button1.BackgroundImage = Properties.Resources.minimizeButton;
-            button1.BackgroundImageLayout = ImageLayout.Center;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(142, 139, 166);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(142, 139, 166);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(1071, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(46, 41);
-            button1.TabIndex = 8;
-            button1.UseVisualStyleBackColor = false;
+            minimizeBtn.BackColor = Color.Transparent;
+            minimizeBtn.BackgroundImage = Properties.Resources.minimizeButton;
+            minimizeBtn.BackgroundImageLayout = ImageLayout.Center;
+            minimizeBtn.Cursor = Cursors.Hand;
+            minimizeBtn.FlatAppearance.BorderSize = 0;
+            minimizeBtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(142, 139, 166);
+            minimizeBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(142, 139, 166);
+            minimizeBtn.FlatStyle = FlatStyle.Flat;
+            minimizeBtn.Location = new Point(1071, 0);
+            minimizeBtn.Name = "minimizeBtn";
+            minimizeBtn.Size = new Size(46, 41);
+            minimizeBtn.TabIndex = 8;
+            minimizeBtn.UseVisualStyleBackColor = false;
+            minimizeBtn.Click += minimizeBtn_Click;
             // 
             // closeBtn
             // 
@@ -102,7 +103,7 @@
             // continueBtn
             // 
             continueBtn.Cursor = Cursors.Hand;
-            continueBtn.Location = new Point(155, 472);
+            continueBtn.Location = new Point(157, 472);
             continueBtn.Name = "continueBtn";
             continueBtn.OverrideDefault.Back.Color1 = Color.FromArgb(39, 150, 255);
             continueBtn.OverrideDefault.Back.Color2 = Color.FromArgb(39, 150, 255);
@@ -114,6 +115,7 @@
             continueBtn.OverrideDefault.Content.ShortText.Color1 = Color.White;
             continueBtn.OverrideDefault.Content.ShortText.Color2 = Color.White;
             continueBtn.OverrideDefault.Content.ShortText.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            continueBtn.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             continueBtn.Size = new Size(226, 42);
             continueBtn.StateCommon.Back.Color1 = Color.FromArgb(39, 150, 255);
             continueBtn.StateCommon.Back.Color2 = Color.FromArgb(39, 150, 255);
@@ -124,9 +126,30 @@
             continueBtn.StateCommon.Border.Width = 1;
             continueBtn.StateCommon.Content.ShortText.Color1 = Color.White;
             continueBtn.StateCommon.Content.ShortText.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            continueBtn.StatePressed.Back.Color1 = Color.FromArgb(100, 180, 255);
+            continueBtn.StatePressed.Back.Color2 = Color.FromArgb(100, 180, 255);
+            continueBtn.StatePressed.Border.Color1 = Color.FromArgb(100, 180, 255);
+            continueBtn.StatePressed.Border.Color2 = Color.FromArgb(100, 180, 255);
+            continueBtn.StatePressed.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            continueBtn.StatePressed.Border.Rounding = 20F;
+            continueBtn.StatePressed.Border.Width = 1;
+            continueBtn.StatePressed.Content.ShortText.Color1 = Color.White;
+            continueBtn.StatePressed.Content.ShortText.Color2 = Color.White;
+            continueBtn.StatePressed.Content.ShortText.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            continueBtn.StateTracking.Back.Color1 = Color.FromArgb(63, 162, 255);
+            continueBtn.StateTracking.Back.Color2 = Color.FromArgb(63, 162, 255);
+            continueBtn.StateTracking.Border.Color1 = Color.FromArgb(63, 162, 255);
+            continueBtn.StateTracking.Border.Color2 = Color.FromArgb(63, 162, 255);
+            continueBtn.StateTracking.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            continueBtn.StateTracking.Border.Rounding = 20F;
+            continueBtn.StateTracking.Border.Width = 1;
+            continueBtn.StateTracking.Content.ShortText.Color1 = Color.White;
+            continueBtn.StateTracking.Content.ShortText.Color2 = Color.White;
+            continueBtn.StateTracking.Content.ShortText.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             continueBtn.TabIndex = 4;
             continueBtn.Values.DropDownArrowColor = Color.Empty;
             continueBtn.Values.Text = "Continue";
+            continueBtn.Click += continueBtn_Click;
             // 
             // groupLbl
             // 
@@ -186,6 +209,6 @@
         private Krypton.Toolkit.KryptonButton continueBtn;
         private PictureBox coverPic;
         private Button closeBtn;
-        private Button button1;
+        private Button minimizeBtn;
     }
 }

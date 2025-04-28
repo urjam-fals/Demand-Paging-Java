@@ -31,5 +31,19 @@ namespace Demand_Paging
         {
 
         }
+
+        private void minimizeBtn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void continueBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainFrame frm = new MainFrame();
+            frm.FormClosed += (s, args) => this.Close();
+            frm.Show();
+            
+        }
     }
 }

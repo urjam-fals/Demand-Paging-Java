@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Demand-Paging")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adc251086a23227769de9ac6fb0e38089f86086b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18e7067ccdfdccc7da83c86640c5b978c7cbec97")]
 [assembly: System.Reflection.AssemblyProductAttribute("Demand-Paging")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Demand-Paging")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
